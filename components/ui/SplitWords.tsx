@@ -37,7 +37,7 @@ export default function SplitWords({ text, as = "h2", className }: Props) {
       aria-label={text}
     >
       {words.map((word, index) => (
-        <span key={`${word}-${index}`} className="inline-block overflow-hidden align-bottom pb-2 -mb-2">
+        <span key={`${word}-${index}`} className="inline-block overflow-hidden align-bottom pb-[0.2em] -mb-[0.2em]">
           <motion.span className="inline-block" variants={wordReveal} custom={index}>
             {word}
             {index < words.length - 1 ? "\u00a0" : ""}
